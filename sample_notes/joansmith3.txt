@@ -1,0 +1,101 @@
+Internal Medicine Daily Progress Note
+
+Synthetic sample note disclaimer: This note is entirely fictional, created for software testing and publication figures. It is not based on any real patient, encounter, chart, or clinical event.
+
+ Patient Name:  Joan Smith3	Today's Date:  7/1/2026
+ Medical Record No.:  SYN0007	Date of Admission:  6/30/2026
+ Date of Birth:  9/17/1959 	Location:  H401/H40101
+ Age/Sex:  66 y.o.  female 	Attending Physician:  Dr. Example
+
+C/C or reason for admission: wheezing
+
+Subjective:
+
+Patient reports improved wheezing after nebulizers and steroids. She remains short of breath with walking to the bathroom but denies chest pain, fever, or hemoptysis.
+
+
+Objective:
+
+Vital Signs
+Current:
+Temp: 98.4 F (36.9 C)	Pulse: 96	Resp: 22	BP: 132/76	SpO2: 92 %	Weight: 68.0 kg (150 lb)
+
+
+Body mass index is 24.9 kg/m2.
+
+Ranges:
+Systolic (24hrs), Avg:130 , Min:118 , Max:144
+Diastolic (24hrs), Avg:75, Min:66, Max:84
+
+Temp  Avg: 98.5 F (36.9 C)  Min: 97.9 F (36.6 C)  Max: 99.1 F (37.3 C)
+Pulse  Avg: 98.2  Min: 88  Max: 112
+Resp  Avg: 22.4  Min: 18  Max: 28
+SpO2  Avg: 91.8 %  Min: 88 %  Max: 95 %
+
+
+Intake/Output Summary (Last 24 hours) at 7/1/2026 0610
+Last data filed at 7/1/2026 0600
+Gross per 24 hour
+Intake	1250 ml
+Output	950 ml
+Net	300 ml
+
+
+Physical Exam
+General:  No acute distress, speaking in full sentences
+Eye:  no jaundice
+ENT: clear oropharynx
+Neck: Supple
+CV: Tachycardic, regular rhythm
+Pulm: Diffuse expiratory wheezes, prolonged expiratory phase
+GI: Abdomen soft and nontender
+MSK: No lower extremity edema
+Neurological: Awake and alert, A&O x3
+Skin: No rash
+Psych: Appropriate affect
+
+New Labs and imaging- reviewed by me
+
+Results for orders placed or performed during the hospital encounter of 06/30/26 (from the past 24 hours)
+BASIC METABOLIC PANEL
+	Collection Time: 7/1/2026  5:18 AM
+Result	Value
+	Sodium	140
+	Potassium	4.5
+	Chloride	102
+	CO2	31 (H)
+	Glucose	151 (H)
+	BUN	16.0
+	Creatinine	0.82
+	Calcium	9.0
+	eGFR	82
+MAGNESIUM
+	Collection Time: 7/1/2026  5:18 AM
+Result	Value
+	Magnesium	2.0
+CBC WITH DIFFERENTIAL
+	Collection Time: 7/1/2026  5:18 AM
+Result	Value
+	WBC	9.40
+	RBC	4.55
+	Hgb	13.8
+	Hct	41.0
+	Platelet Count	260
+PHOSPHORUS, INORGANIC
+	Collection Time: 7/1/2026  5:18 AM
+Result	Value
+	Phosphorus	3.1
+
+Imaging
+Chest x-ray 7/1/26 hyperinflation without focal consolidation or pleural effusion.
+CTA chest 7/1/26 no pulmonary embolism, mild emphysema, scattered mucus plugging.
+
+Assessment/Plan:
+Joan Smith3 is a synthetic 66-year-old female with COPD admitted for acute COPD exacerbation with hypoxemia, improving with steroids, bronchodilators, and oxygen wean.
+Assessment & Plan
+COPD exacerbation
+- Continue prednisone burst
+- Scheduled bronchodilator nebulizers
+- Azithromycin for anti-inflammatory course
+- Wean oxygen for goal SpO2 88-92%
+

@@ -1,0 +1,102 @@
+Internal Medicine Daily Progress Note
+
+Synthetic sample note disclaimer: This note is entirely fictional, created for software testing and publication figures. It is not based on any real patient, encounter, chart, or clinical event.
+
+ Patient Name:  John Smith3	Today's Date:  7/1/2026
+ Medical Record No.:  SYN0003	Date of Admission:  6/29/2026
+ Date of Birth:  3/14/1962 	Location:  H301/H30101
+ Age/Sex:  64 y.o.  male 	Attending Physician:  Dr. Example
+
+C/C or reason for admission: shortness of breath
+
+Subjective:
+
+No acute events overnight. Patient reports improved breathing after IV diuresis. Orthopnea is better and he denies chest pain, fever, chills, or productive cough.
+
+
+Objective:
+
+Vital Signs
+Current:
+Temp: 98.1 F (36.7 C)	Pulse: 88	Resp: 18	BP: 128/74	SpO2: 95 %	Weight: 91.0 kg (200 lb)
+
+
+Body mass index is 30.2 kg/m2.
+
+Ranges:
+Systolic (24hrs), Avg:124 , Min:112 , Max:138
+Diastolic (24hrs), Avg:72, Min:64, Max:82
+
+Temp  Avg: 98.0 F (36.7 C)  Min: 97.4 F (36.3 C)  Max: 98.6 F (37.0 C)
+Pulse  Avg: 84.0  Min: 76  Max: 96
+Resp  Avg: 18.6  Min: 16  Max: 22
+SpO2  Avg: 94.8 %  Min: 92 %  Max: 98 %
+
+
+Intake/Output Summary (Last 24 hours) at 7/1/2026 0615
+Last data filed at 7/1/2026 0600
+Gross per 24 hour
+Intake	1100 ml
+Output	3100 ml
+Net	-2000 ml
+
+
+Physical Exam
+General:  No distress, sitting upright in bed
+Eye:  no scleral icterus
+ENT: moist mucous membranes
+Neck: Supple, JVD to mid neck
+CV: Normal rate and Regular rhythm. No murmurs or gallops
+Pulm: Bibasilar crackles, no wheezing
+GI: Abdomen soft, nontender, nondistended
+MSK: 2+ bilateral lower extremity edema
+Neurological: Awake and alert, A&O x3
+Skin: Warm and dry
+Psych: Appropriate affect. Intact judgment and insight
+
+New Labs and imaging- reviewed by me
+
+Results for orders placed or performed during the hospital encounter of 06/29/26 (from the past 24 hours)
+BASIC METABOLIC PANEL
+	Collection Time: 7/1/2026  5:12 AM
+Result	Value
+	Sodium	137
+	Potassium	3.8
+	Chloride	100
+	CO2	29
+	Glucose	118 (H)
+	BUN	24.0 (H)
+	Creatinine	1.18
+	Calcium	8.9
+	eGFR	70
+	AGap	8
+MAGNESIUM
+	Collection Time: 7/1/2026  5:12 AM
+Result	Value
+	Magnesium	1.9
+CBC WITH DIFFERENTIAL
+	Collection Time: 7/1/2026  5:12 AM
+Result	Value
+	WBC	8.20
+	RBC	4.10
+	Hgb	12.7 (L)
+	Hct	38.4 (L)
+	Platelet Count	230
+PHOSPHORUS, INORGANIC
+	Collection Time: 7/1/2026  5:12 AM
+Result	Value
+	Phosphorus	3.4
+
+Imaging
+Chest x-ray 7/1/26 mild pulmonary vascular congestion with small bilateral pleural effusions.
+TTE 7/1/26 LVEF 35-40%, global hypokinesis, mild mitral regurgitation, dilated IVC.
+
+Assessment/Plan:
+John Smith3 is a synthetic 64-year-old male with chronic HFrEF admitted for acute decompensated heart failure, now improving with IV diuresis and oxygen wean.
+Assessment & Plan
+Acute decompensated HFrEF
+- Continue IV furosemide 40 mg BID
+- Strict intake/output and daily standing weights
+- Replete potassium and magnesium as needed
+- Continue metoprolol and losartan as tolerated
+

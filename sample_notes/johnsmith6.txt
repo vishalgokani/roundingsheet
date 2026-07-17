@@ -1,0 +1,112 @@
+Internal Medicine Daily Progress Note
+
+Synthetic sample note disclaimer: This note is entirely fictional, created for software testing and publication figures. It is not based on any real patient, encounter, chart, or clinical event.
+
+ Patient Name:  John Smith6	Today's Date:  7/1/2026
+ Medical Record No.:  SYN0006	Date of Admission:  6/30/2026
+ Date of Birth:  5/30/1971 	Location:  1410
+ Age/Sex:  55 y.o.  male 	Attending Physician:  Dr. Example
+
+C/C or reason for admission: confusion
+
+Subjective:
+
+Mental status improved after lactulose overnight. Patient is awake and answers questions appropriately. Denies abdominal pain, fever, hematemesis, or melena.
+
+
+Objective:
+
+Vital Signs
+Current:
+Temp: 98.0 F (36.7 C)	Pulse: 82	Resp: 16	BP: 110/66	SpO2: 97 %	Weight: 82.0 kg (181 lb)
+
+
+Body mass index is 26.9 kg/m2.
+
+Ranges:
+Systolic (24hrs), Avg:112 , Min:98 , Max:126
+Diastolic (24hrs), Avg:67, Min:58, Max:76
+
+Temp  Avg: 98.3 F (36.8 C)  Min: 97.8 F (36.6 C)  Max: 99.0 F (37.2 C)
+Pulse  Avg: 84.5  Min: 76  Max: 94
+Resp  Avg: 17.3  Min: 16  Max: 20
+SpO2  Avg: 96.8 %  Min: 95 %  Max: 99 %
+
+
+Intake/Output Summary (Last 24 hours) at 7/1/2026 0645
+Last data filed at 7/1/2026 0600
+Gross per 24 hour
+Intake	1600 ml
+Output	1200 ml
+Net	400 ml
+
+
+Physical Exam
+General:  No distress
+Eye:  scleral icterus present
+ENT: moist mucous membranes
+Neck: Supple
+CV: Normal rate and Regular rhythm
+Pulm: Clear to auscultation bilaterally
+GI: Abdomen mildly distended, nontender
+MSK: No joint swelling
+Neurological: Awake and alert, mild asterixis
+Skin: Jaundice
+Psych: Calm and cooperative
+
+New Labs and imaging- reviewed by me
+
+Results for orders placed or performed during the hospital encounter of 06/30/26 (from the past 24 hours)
+COMPREHENSIVE METABOLIC PANEL
+	Collection Time: 7/1/2026  5:28 AM
+Result	Value
+	Sodium	132 (L)
+	Potassium	3.6
+	Chloride	101
+	CO2	22
+	Glucose	88
+	BUN	14.0
+	Creatinine	0.78
+	Calcium	8.2 (L)
+	Total Protein	5.8 (L)
+	Albumin	2.3 (L)
+	Alk Phos	142 (H)
+	AST (SGOT)	96 (H)
+	ALT (SGPT)	44
+	Bilirubin, Total	4.4 (H)
+	eGFR	104
+MAGNESIUM
+	Collection Time: 7/1/2026  5:28 AM
+Result	Value
+	Magnesium	1.7
+PHOSPHORUS, INORGANIC
+	Collection Time: 7/1/2026  5:28 AM
+Result	Value
+	Phosphorus	2.5
+CBC WITH DIFFERENTIAL
+	Collection Time: 7/1/2026  5:28 AM
+Result	Value
+	WBC	6.10
+	RBC	3.05 (L)
+	Hgb	9.8 (L)
+	Hct	29.6 (L)
+	Platelet Count	74 (L)
+PROTHROMBIN TIME (PT) WITH INR
+	Collection Time: 7/1/2026  5:28 AM
+Result	Value
+	PT	21.8 (H)
+	INR	1.9 (H)
+
+Imaging
+CT head without contrast 7/1/26 no acute intracranial abnormality.
+Abdominal ultrasound 7/1/26 cirrhotic liver morphology, trace ascites, no biliary ductal dilation.
+
+Assessment/Plan:
+John Smith6 is a synthetic 55-year-old male with cirrhosis admitted for hepatic encephalopathy, now improving with lactulose and supportive care.
+Assessment & Plan
+Hepatic encephalopathy
+- Continue lactulose titrated to 3 bowel movements daily
+- Add rifaximin
+- Avoid sedating medications
+- Trend CMP and INR
+

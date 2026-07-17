@@ -1,0 +1,102 @@
+Internal Medicine Daily Progress Note
+
+Synthetic sample note disclaimer: This note is entirely fictional, created for software testing and publication figures. It is not based on any real patient, encounter, chart, or clinical event.
+
+ Patient Name:  John Smith2	Today's Date:  7/1/2026
+ Medical Record No.:  SYN0002	Date of Admission:  6/30/2026
+ Date of Birth:  2/6/1991 	Location:  1320
+ Age/Sex:  35 y.o.  male 	Attending Physician:  Dr. Example
+
+C/C or reason for admission: high blood sugar
+
+Subjective:
+
+Patient reports nausea is much improved and he is tolerating clear liquids. No abdominal pain, chest pain, dyspnea, fever, or confusion.
+
+
+Objective:
+
+Vital Signs
+Current:
+Temp: 98.7 F (37.1 C)	Pulse: 98	Resp: 20	BP: 118/72	SpO2: 99 %	Weight: 74.8 kg (165 lb)
+
+
+Body mass index is 23.7 kg/m2.
+
+Ranges:
+Systolic (24hrs), Avg:116 , Min:98 , Max:132
+Diastolic (24hrs), Avg:70, Min:58, Max:82
+
+Temp  Avg: 98.9 F (37.2 C)  Min: 98.1 F (36.7 C)  Max: 99.6 F (37.6 C)
+Pulse  Avg: 106.8  Min: 92  Max: 124
+Resp  Avg: 21.8  Min: 18  Max: 28
+SpO2  Avg: 98.6 %  Min: 96 %  Max: 100 %
+
+
+Intake/Output Summary (Last 24 hours) at 7/1/2026 0618
+Last data filed at 7/1/2026 0600
+Gross per 24 hour
+Intake	4200 ml
+Output	3100 ml
+Net	1100 ml
+
+
+Physical Exam
+General:  No distress
+Eye:  no scleral icterus
+ENT: moist mucous membranes
+Neck: Supple
+CV: Mild tachycardia, regular rhythm
+Pulm: Clear to auscultation bilaterally
+GI: Abdomen soft, nontender, nondistended
+MSK: No edema
+Neurological: Awake and alert, A&O x3
+Skin: Warm and dry
+Psych: Appropriate affect
+
+New Labs and imaging- reviewed by me
+
+Results for orders placed or performed during the hospital encounter of 06/30/26 (from the past 24 hours)
+BASIC METABOLIC PANEL
+	Collection Time: 7/1/2026  5:20 AM
+Result	Value
+	Sodium	133 (L)
+	Potassium	4.6
+	Chloride	101
+	CO2	18 (L)
+	Glucose	248 (H)
+	BUN	20.0
+	Creatinine	1.05
+	Calcium	8.7
+	eGFR	90
+	AGap	14
+MAGNESIUM
+	Collection Time: 7/1/2026  5:20 AM
+Result	Value
+	Magnesium	1.8
+PHOSPHORUS, INORGANIC
+	Collection Time: 7/1/2026  5:20 AM
+Result	Value
+	Phosphorus	2.1 (L)
+CBC WITH DIFFERENTIAL
+	Collection Time: 7/1/2026  5:20 AM
+Result	Value
+	WBC	12.60 (H)
+	RBC	4.72
+	Hgb	14.2
+	Hct	42.1
+	Platelet Count	286
+
+Imaging
+Chest x-ray 7/1/26 clear lungs without focal infiltrate.
+CT abdomen pelvis with contrast 7/1/26 no acute intra-abdominal abnormality.
+
+Assessment/Plan:
+John Smith2 is a synthetic 35-year-old male with type 1 diabetes admitted for diabetic ketoacidosis, now improving with closing anion gap and transition planning from insulin infusion to basal bolus insulin.
+Assessment & Plan
+Diabetic ketoacidosis
+- Continue insulin protocol until anion gap closed
+- Continue dextrose-containing fluids while on insulin drip
+- Replete potassium and phosphorus
+- Transition to basal bolus insulin when tolerating diet
+

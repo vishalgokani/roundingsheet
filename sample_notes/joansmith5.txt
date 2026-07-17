@@ -1,0 +1,112 @@
+Internal Medicine Daily Progress Note
+
+Synthetic sample note disclaimer: This note is entirely fictional, created for software testing and publication figures. It is not based on any real patient, encounter, chart, or clinical event.
+
+ Patient Name:  Joan Smith5	Today's Date:  7/1/2026
+ Medical Record No.:  SYN0009	Date of Admission:  6/30/2026
+ Date of Birth:  6/11/1984 	Location:  H509/H50901
+ Age/Sex:  42 y.o.  female 	Attending Physician:  Dr. Example
+
+C/C or reason for admission: fever
+
+Subjective:
+
+Patient feels improved after fluids and antibiotics. Dysuria is better. She denies flank pain, shortness of breath, chest pain, or confusion.
+
+
+Objective:
+
+Vital Signs
+Current:
+Temp: 99.2 F (37.3 C)	Pulse: 104	Resp: 20	BP: 102/60	SpO2: 97 %	Weight: 72.0 kg (159 lb)
+
+
+Body mass index is 26.4 kg/m2.
+
+Ranges:
+Systolic (24hrs), Avg:100 , Min:86 , Max:116
+Diastolic (24hrs), Avg:59, Min:48, Max:70
+
+Temp  Avg: 100.1 F (37.8 C)  Min: 98.8 F (37.1 C)  Max: 102.2 F (39.0 C)
+Pulse  Avg: 110.5  Min: 96  Max: 124
+Resp  Avg: 21.8  Min: 18  Max: 26
+SpO2  Avg: 96.5 %  Min: 94 %  Max: 99 %
+
+
+Intake/Output Summary (Last 24 hours) at 7/1/2026 0650
+Last data filed at 7/1/2026 0600
+Gross per 24 hour
+Intake	3200 ml
+Output	1800 ml
+Net	1400 ml
+
+
+Physical Exam
+General:  No distress, appears tired
+Eye:  no jaundice
+ENT: moist mucous membranes
+Neck: Supple
+CV: Tachycardic, regular rhythm
+Pulm: Clear bilaterally
+GI: Abdomen soft, mild suprapubic tenderness
+MSK: No edema
+Neurological: Awake and alert, A&O x3
+Skin: Warm
+Psych: Appropriate affect
+
+New Labs and imaging- reviewed by me
+
+Results for orders placed or performed during the hospital encounter of 06/30/26 (from the past 24 hours)
+COMPREHENSIVE METABOLIC PANEL
+	Collection Time: 7/1/2026  5:05 AM
+Result	Value
+	Sodium	136
+	Potassium	3.7
+	Chloride	105
+	CO2	20 (L)
+	Glucose	126 (H)
+	BUN	22.0 (H)
+	Creatinine	1.24 (H)
+	Calcium	8.4 (L)
+	Total Protein	6.4
+	Albumin	3.0 (L)
+	Alk Phos	102
+	AST (SGOT)	34
+	ALT (SGPT)	29
+	Bilirubin, Total	0.7
+	eGFR	52
+MAGNESIUM
+	Collection Time: 7/1/2026  5:05 AM
+Result	Value
+	Magnesium	1.6
+PHOSPHORUS, INORGANIC
+	Collection Time: 7/1/2026  5:05 AM
+Result	Value
+	Phosphorus	2.4 (L)
+CBC WITH DIFFERENTIAL
+	Collection Time: 7/1/2026  5:05 AM
+Result	Value
+	WBC	18.40 (H)
+	RBC	3.82 (L)
+	Hgb	11.6 (L)
+	Hct	34.8 (L)
+	Platelet Count	198
+PROTHROMBIN TIME (PT) WITH INR
+	Collection Time: 7/1/2026  5:05 AM
+Result	Value
+	PT	15.4 (H)
+	INR	1.2 (H)
+
+Imaging
+CT abdomen pelvis with contrast 7/1/26 mild right pyelonephritis, no abscess or obstructing stone.
+Chest x-ray 7/1/26 no acute cardiopulmonary abnormality.
+
+Assessment/Plan:
+Joan Smith5 is a synthetic 42-year-old female admitted for sepsis due to acute pyelonephritis, improving after IV fluids and ceftriaxone.
+Assessment & Plan
+Sepsis due to pyelonephritis
+- Continue ceftriaxone
+- Follow blood and urine cultures
+- Monitor fever curve and leukocytosis
+- Encourage oral intake and monitor creatinine
+

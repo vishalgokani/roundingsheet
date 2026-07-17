@@ -1,0 +1,112 @@
+Internal Medicine Daily Progress Note
+
+Synthetic sample note disclaimer: This note is entirely fictional, created for software testing and publication figures. It is not based on any real patient, encounter, chart, or clinical event.
+
+ Patient Name:  Joan Smith1	Today's Date:  7/1/2026
+ Medical Record No.:  SYN0011	Date of Admission:  6/30/2026
+ Date of Birth:  11/25/1974 	Location:  H207/H20701
+ Age/Sex:  51 y.o.  female 	Attending Physician:  Dr. Example
+
+C/C or reason for admission: leg redness
+
+Subjective:
+
+Patient reports left leg pain is improving. Redness has not spread beyond the marked border. She denies fever, chills, chest pain, dyspnea, nausea, or vomiting.
+
+
+Objective:
+
+Vital Signs
+Current:
+Temp: 98.9 F (37.2 C)	Pulse: 92	Resp: 18	BP: 126/74	SpO2: 98 %	Weight: 88.5 kg (195 lb)
+
+
+Body mass index is 32.1 kg/m2.
+
+Ranges:
+Systolic (24hrs), Avg:124 , Min:110 , Max:138
+Diastolic (24hrs), Avg:72, Min:62, Max:84
+
+Temp  Avg: 99.2 F (37.3 C)  Min: 98.4 F (36.9 C)  Max: 100.6 F (38.1 C)
+Pulse  Avg: 96.5  Min: 84  Max: 112
+Resp  Avg: 18.8  Min: 16  Max: 22
+SpO2  Avg: 97.5 %  Min: 95 %  Max: 100 %
+
+
+Intake/Output Summary (Last 24 hours) at 7/1/2026 0608
+Last data filed at 7/1/2026 0600
+Gross per 24 hour
+Intake	1700 ml
+Output	1500 ml
+Net	200 ml
+
+
+Physical Exam
+General:  No distress
+Eye:  no jaundice
+ENT: moist mucous membranes
+Neck: Supple
+CV: Normal rate and Regular rhythm
+Pulm: Clear to auscultation bilaterally
+GI: Abdomen soft and nontender
+MSK: Left lower extremity erythema and warmth below knee, no fluctuance
+Neurological: Awake and alert, A&O x3
+Skin: Left shin erythema within marked border
+Psych: Appropriate affect
+
+New Labs and imaging- reviewed by me
+
+Results for orders placed or performed during the hospital encounter of 06/30/26 (from the past 24 hours)
+COMPREHENSIVE METABOLIC PANEL
+	Collection Time: 7/1/2026  5:32 AM
+Result	Value
+	Sodium	137
+	Potassium	4.1
+	Chloride	103
+	CO2	25
+	Glucose	109 (H)
+	BUN	15.0
+	Creatinine	0.86
+	Calcium	8.8
+	Total Protein	6.8
+	Albumin	3.2 (L)
+	Alk Phos	102
+	AST (SGOT)	22
+	ALT (SGPT)	24
+	Bilirubin, Total	0.5
+	eGFR	82
+MAGNESIUM
+	Collection Time: 7/1/2026  5:32 AM
+Result	Value
+	Magnesium	2.0
+PHOSPHORUS, INORGANIC
+	Collection Time: 7/1/2026  5:32 AM
+Result	Value
+	Phosphorus	3.0
+CBC WITH DIFFERENTIAL
+	Collection Time: 7/1/2026  5:32 AM
+Result	Value
+	WBC	13.80 (H)
+	RBC	4.08
+	Hgb	12.2
+	Hct	36.8
+	Platelet Count	252
+PROTHROMBIN TIME (PT) WITH INR
+	Collection Time: 7/1/2026  5:32 AM
+Result	Value
+	PT	13.2
+	INR	1.0
+
+Imaging
+Left lower extremity venous ultrasound 7/1/26 no deep venous thrombosis.
+Left tibia/fibula x-ray 7/1/26 soft tissue swelling without soft tissue gas or osseous erosion.
+
+Assessment/Plan:
+Joan Smith1 is a synthetic 51-year-old female admitted for nonpurulent left lower extremity cellulitis, improving on IV cefazolin without abscess or DVT on imaging.
+Assessment & Plan
+Left lower extremity cellulitis
+- Continue cefazolin
+- Elevate affected leg
+- Monitor erythema border and fever curve
+- Transition to oral antibiotics if continued improvement
+

@@ -1,0 +1,108 @@
+Internal Medicine Daily Progress Note
+
+Synthetic sample note disclaimer: This note is entirely fictional, created for software testing and publication figures. It is not based on any real patient, encounter, chart, or clinical event.
+
+ Patient Name:  John Smith4	Today's Date:  7/1/2026
+ Medical Record No.:  SYN0004	Date of Admission:  6/30/2026
+ Date of Birth:  8/22/1955 	Location:  1402
+ Age/Sex:  70 y.o.  male 	Attending Physician:  Dr. Example
+
+C/C or reason for admission: leg swelling
+
+Subjective:
+
+Patient states swelling is improving. He slept with two pillows rather than four and denies chest pain, palpitations, cough, fever, or dizziness.
+
+
+Objective:
+
+Vital Signs
+Current:
+Temp: 97.8 F (36.6 C)	Pulse: 72	Resp: 18	BP: 116/68	SpO2: 97 %	Weight: 84.2 kg (185 lb)
+
+
+Body mass index is 27.8 kg/m2.
+
+Ranges:
+Systolic (24hrs), Avg:118 , Min:104 , Max:130
+Diastolic (24hrs), Avg:69, Min:58, Max:78
+
+Temp  Avg: 97.9 F (36.6 C)  Min: 97.1 F (36.2 C)  Max: 98.4 F (36.9 C)
+Pulse  Avg: 76.4  Min: 68  Max: 88
+Resp  Avg: 17.8  Min: 16  Max: 20
+SpO2  Avg: 96.5 %  Min: 94 %  Max: 99 %
+
+
+Intake/Output Summary (Last 24 hours) at 7/1/2026 0640
+Last data filed at 7/1/2026 0600
+Gross per 24 hour
+Intake	900 ml
+Output	2600 ml
+Net	-1700 ml
+
+
+Physical Exam
+General:  No distress
+Eye:  no jaundice
+ENT: clear oropharynx
+Neck: Supple, mild JVD
+CV: Normal rate and Regular rhythm. No gallops
+Pulm: Decreased breath sounds at bases
+GI: Abdomen soft and nontender
+MSK: 1+ bilateral lower extremity edema
+Neurological: Awake and alert, A&O x3
+Skin: No rash
+Psych: Appropriate affect
+
+New Labs and imaging- reviewed by me
+
+Results for orders placed or performed during the hospital encounter of 06/30/26 (from the past 24 hours)
+COMPREHENSIVE METABOLIC PANEL
+	Collection Time: 7/1/2026  6:02 AM
+Result	Value
+	Sodium	134 (L)
+	Potassium	4.1
+	Chloride	98
+	CO2	28
+	Glucose	142 (H)
+	BUN	31.0 (H)
+	Creatinine	1.32 (H)
+	Calcium	9.1
+	Total Protein	6.5
+	Albumin	3.4 (L)
+	Alk Phos	94
+	AST (SGOT)	28
+	ALT (SGPT)	22
+	Bilirubin, Total	0.8
+	eGFR	58
+MAGNESIUM
+	Collection Time: 7/1/2026  6:02 AM
+Result	Value
+	Magnesium	2.1
+CBC WITH DIFFERENTIAL
+	Collection Time: 7/1/2026  6:02 AM
+Result	Value
+	WBC	6.40
+	RBC	4.25
+	Hgb	13.1
+	Hct	39.2
+	Platelet Count	212
+PROTHROMBIN TIME (PT) WITH INR
+	Collection Time: 7/1/2026  6:02 AM
+Result	Value
+	PT	13.0
+	INR	1.0
+
+Imaging
+Chest x-ray 7/1/26 cardiomegaly with improving interstitial edema.
+TTE 7/1/26 LVEF 45-50%, grade II diastolic dysfunction, moderate left atrial enlargement.
+
+Assessment/Plan:
+John Smith4 is a synthetic 70-year-old male with HFpEF admitted for volume overload and lower extremity edema, improving with diuresis and stable renal function monitoring.
+Assessment & Plan
+Acute on chronic HFpEF
+- Continue IV diuresis today
+- Monitor creatinine and electrolytes
+- Low sodium diet
+- Plan transition to oral diuretic when euvolemic
+

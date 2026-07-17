@@ -1,0 +1,112 @@
+Internal Medicine Daily Progress Note
+
+Synthetic sample note disclaimer: This note is entirely fictional, created for software testing and publication figures. It is not based on any real patient, encounter, chart, or clinical event.
+
+ Patient Name:  John Smith5	Today's Date:  7/1/2026
+ Medical Record No.:  SYN0005	Date of Admission:  6/28/2026
+ Date of Birth:  12/4/1968 	Location:  H307/H30702
+ Age/Sex:  57 y.o.  male 	Attending Physician:  Dr. Example
+
+C/C or reason for admission: abdominal swelling
+
+Subjective:
+
+Patient reports abdominal fullness improved after paracentesis. No fever, confusion, hematemesis, melena, or severe abdominal pain.
+
+
+Objective:
+
+Vital Signs
+Current:
+Temp: 98.3 F (36.8 C)	Pulse: 86	Resp: 18	BP: 104/62	SpO2: 96 %	Weight: 78.4 kg (173 lb)
+
+
+Body mass index is 25.6 kg/m2.
+
+Ranges:
+Systolic (24hrs), Avg:106 , Min:94 , Max:118
+Diastolic (24hrs), Avg:64, Min:55, Max:74
+
+Temp  Avg: 98.2 F (36.8 C)  Min: 97.6 F (36.4 C)  Max: 98.9 F (37.2 C)
+Pulse  Avg: 88.2  Min: 80  Max: 96
+Resp  Avg: 18.2  Min: 16  Max: 20
+SpO2  Avg: 96.1 %  Min: 94 %  Max: 98 %
+
+
+Intake/Output Summary (Last 24 hours) at 7/1/2026 0630
+Last data filed at 7/1/2026 0600
+Gross per 24 hour
+Intake	1350 ml
+Output	900 ml
+Net	450 ml
+
+
+Physical Exam
+General:  No distress
+Eye:  mild scleral icterus
+ENT: moist mucous membranes
+Neck: Supple
+CV: Normal rate and Regular rhythm
+Pulm: Clear bilaterally
+GI: Abdomen distended, soft, nontender, fluid wave present
+MSK: Trace bilateral lower extremity edema
+Neurological: Awake and alert, no asterixis
+Skin: Spider angiomas on upper chest
+Psych: Appropriate affect
+
+New Labs and imaging- reviewed by me
+
+Results for orders placed or performed during the hospital encounter of 06/28/26 (from the past 24 hours)
+COMPREHENSIVE METABOLIC PANEL
+	Collection Time: 7/1/2026  5:44 AM
+Result	Value
+	Sodium	130 (L)
+	Potassium	4.3
+	Chloride	99
+	CO2	24
+	Glucose	96
+	BUN	18.0
+	Creatinine	0.92
+	Calcium	8.3 (L)
+	Total Protein	6.0 (L)
+	Albumin	2.5 (L)
+	Alk Phos	168 (H)
+	AST (SGOT)	74 (H)
+	ALT (SGPT)	38
+	Bilirubin, Total	3.1 (H)
+	eGFR	95
+MAGNESIUM
+	Collection Time: 7/1/2026  5:44 AM
+Result	Value
+	Magnesium	1.8
+PHOSPHORUS, INORGANIC
+	Collection Time: 7/1/2026  5:44 AM
+Result	Value
+	Phosphorus	2.8
+CBC WITH DIFFERENTIAL
+	Collection Time: 7/1/2026  5:44 AM
+Result	Value
+	WBC	5.60
+	RBC	3.20 (L)
+	Hgb	10.2 (L)
+	Hct	30.8 (L)
+	Platelet Count	88 (L)
+PROTHROMBIN TIME (PT) WITH INR
+	Collection Time: 7/1/2026  5:44 AM
+Result	Value
+	PT	19.2 (H)
+	INR	1.7 (H)
+
+Imaging
+RUQ ultrasound 7/1/26 cirrhotic liver morphology with moderate ascites, patent portal vein, no focal hepatic lesion.
+Diagnostic paracentesis 7/1/26 clear yellow fluid, no imaging complication.
+
+Assessment/Plan:
+John Smith5 is a synthetic 57-year-old male with decompensated cirrhosis admitted for ascites, status post diagnostic and therapeutic paracentesis without evidence of spontaneous bacterial peritonitis.
+Assessment & Plan
+Decompensated cirrhosis with ascites
+- Continue sodium restriction
+- Start spironolactone and furosemide if renal function remains stable
+- Follow ascitic fluid cultures
+- Monitor daily CMP and INR
+

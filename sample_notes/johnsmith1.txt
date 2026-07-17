@@ -1,0 +1,112 @@
+Internal Medicine Daily Progress Note
+
+Synthetic sample note disclaimer: This note is entirely fictional, created for software testing and publication figures. It is not based on any real patient, encounter, chart, or clinical event.
+
+ Patient Name:  John Smith1	Today's Date:  7/1/2026
+ Medical Record No.:  SYN0001	Date of Admission:  6/30/2026
+ Date of Birth:  4/18/1958 	Location:  H201/H20101
+ Age/Sex:  68 y.o.  male 	Attending Physician:  Dr. Example
+
+C/C or reason for admission: black stools
+
+Subjective:
+
+No acute events overnight. Patient reports no further melena since admission. He denies hematemesis, abdominal pain, chest pain, dizziness, or shortness of breath.
+
+
+Objective:
+
+Vital Signs
+Current:
+Temp: 98.0 F (36.7 C)	Pulse: 86	Resp: 18	BP: 112/64	SpO2: 98 %	Weight: 79.0 kg (174 lb)
+
+
+Body mass index is 25.9 kg/m2.
+
+Ranges:
+Systolic (24hrs), Avg:110 , Min:94 , Max:124
+Diastolic (24hrs), Avg:63, Min:52, Max:74
+
+Temp  Avg: 98.2 F (36.8 C)  Min: 97.6 F (36.4 C)  Max: 98.8 F (37.1 C)
+Pulse  Avg: 91.4  Min: 78  Max: 108
+Resp  Avg: 18.4  Min: 16  Max: 22
+SpO2  Avg: 97.8 %  Min: 96 %  Max: 100 %
+
+
+Intake/Output Summary (Last 24 hours) at 7/1/2026 0605
+Last data filed at 7/1/2026 0600
+Gross per 24 hour
+Intake	1800 ml
+Output	950 ml
+Net	850 ml
+
+
+Physical Exam
+General:  No distress, resting comfortably
+Eye:  no scleral icterus
+ENT: moist mucous membranes
+Neck: Supple
+CV: Normal rate and Regular rhythm. No murmurs
+Pulm: Lungs clear to auscultation bilaterally
+GI: Abdomen soft, nontender, nondistended
+MSK: No edema
+Neurological: Awake and alert, A&O x3
+Skin: Warm and dry
+Psych: Appropriate affect
+
+New Labs and imaging- reviewed by me
+
+Results for orders placed or performed during the hospital encounter of 06/30/26 (from the past 24 hours)
+COMPREHENSIVE METABOLIC PANEL
+	Collection Time: 7/1/2026  5:10 AM
+Result	Value
+	Sodium	138
+	Potassium	4.0
+	Chloride	106
+	CO2	24
+	Glucose	112 (H)
+	BUN	38.0 (H)
+	Creatinine	1.08
+	Calcium	8.4 (L)
+	Total Protein	5.8 (L)
+	Albumin	3.0 (L)
+	Alk Phos	86
+	AST (SGOT)	24
+	ALT (SGPT)	18
+	Bilirubin, Total	0.6
+	eGFR	78
+MAGNESIUM
+	Collection Time: 7/1/2026  5:10 AM
+Result	Value
+	Magnesium	1.9
+PHOSPHORUS, INORGANIC
+	Collection Time: 7/1/2026  5:10 AM
+Result	Value
+	Phosphorus	3.2
+CBC WITH DIFFERENTIAL
+	Collection Time: 7/1/2026  5:10 AM
+Result	Value
+	WBC	7.30
+	RBC	2.94 (L)
+	Hgb	8.6 (L)
+	Hct	25.7 (L)
+	Platelet Count	248
+PROTHROMBIN TIME (PT) WITH INR
+	Collection Time: 7/1/2026  5:10 AM
+Result	Value
+	PT	14.0
+	INR	1.1
+
+Imaging
+Chest x-ray 7/1/26 no acute cardiopulmonary abnormality.
+EGD planned 7/1/26 for evaluation of suspected upper gastrointestinal bleeding.
+
+Assessment/Plan:
+John Smith1 is a synthetic 68-year-old male admitted for melena and acute blood loss anemia concerning for upper gastrointestinal bleeding, currently hemodynamically stable on IV proton pump inhibitor therapy.
+Assessment & Plan
+Upper gastrointestinal bleeding
+- Continue IV pantoprazole BID
+- Trend hemoglobin every 8 hours
+- Maintain two large bore IVs
+- GI consulted for EGD
+

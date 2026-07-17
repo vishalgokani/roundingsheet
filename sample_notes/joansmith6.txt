@@ -1,0 +1,112 @@
+Internal Medicine Daily Progress Note
+
+Synthetic sample note disclaimer: This note is entirely fictional, created for software testing and publication figures. It is not based on any real patient, encounter, chart, or clinical event.
+
+ Patient Name:  Joan Smith6	Today's Date:  7/1/2026
+ Medical Record No.:  SYN0010	Date of Admission:  6/30/2026
+ Date of Birth:  10/2/1977 	Location:  1608
+ Age/Sex:  48 y.o.  female 	Attending Physician:  Dr. Example
+
+C/C or reason for admission: pneumonia
+
+Subjective:
+
+Patient reports improved chills and less dyspnea after antibiotics. Cough remains productive of yellow sputum. No chest pain, vomiting, or confusion.
+
+
+Objective:
+
+Vital Signs
+Current:
+Temp: 100.0 F (37.8 C)	Pulse: 108	Resp: 22	BP: 108/64	SpO2: 93 %	Weight: 76.2 kg (168 lb)
+
+
+Body mass index is 28.0 kg/m2.
+
+Ranges:
+Systolic (24hrs), Avg:106 , Min:90 , Max:122
+Diastolic (24hrs), Avg:63, Min:52, Max:74
+
+Temp  Avg: 100.4 F (38.0 C)  Min: 99.0 F (37.2 C)  Max: 102.0 F (38.9 C)
+Pulse  Avg: 112.4  Min: 100  Max: 128
+Resp  Avg: 23.5  Min: 20  Max: 28
+SpO2  Avg: 92.6 %  Min: 89 %  Max: 96 %
+
+
+Intake/Output Summary (Last 24 hours) at 7/1/2026 0635
+Last data filed at 7/1/2026 0600
+Gross per 24 hour
+Intake	2800 ml
+Output	1450 ml
+Net	1350 ml
+
+
+Physical Exam
+General:  No distress, nasal cannula in place
+Eye:  no scleral icterus
+ENT: moist mucous membranes
+Neck: Supple
+CV: Tachycardic, regular rhythm
+Pulm: Crackles at right base, no wheezing
+GI: Abdomen soft and nontender
+MSK: No edema
+Neurological: Awake and alert
+Skin: Warm and dry
+Psych: Appropriate affect
+
+New Labs and imaging- reviewed by me
+
+Results for orders placed or performed during the hospital encounter of 06/30/26 (from the past 24 hours)
+COMPREHENSIVE METABOLIC PANEL
+	Collection Time: 7/1/2026  5:22 AM
+Result	Value
+	Sodium	135
+	Potassium	3.9
+	Chloride	104
+	CO2	21
+	Glucose	119 (H)
+	BUN	19.0
+	Creatinine	1.05
+	Calcium	8.6
+	Total Protein	6.6
+	Albumin	2.9 (L)
+	Alk Phos	118
+	AST (SGOT)	41 (H)
+	ALT (SGPT)	32
+	Bilirubin, Total	0.9
+	eGFR	64
+MAGNESIUM
+	Collection Time: 7/1/2026  5:22 AM
+Result	Value
+	Magnesium	1.7
+PHOSPHORUS, INORGANIC
+	Collection Time: 7/1/2026  5:22 AM
+Result	Value
+	Phosphorus	2.9
+CBC WITH DIFFERENTIAL
+	Collection Time: 7/1/2026  5:22 AM
+Result	Value
+	WBC	16.10 (H)
+	RBC	3.90
+	Hgb	11.9 (L)
+	Hct	35.9 (L)
+	Platelet Count	224
+PROTHROMBIN TIME (PT) WITH INR
+	Collection Time: 7/1/2026  5:22 AM
+Result	Value
+	PT	14.8 (H)
+	INR	1.1
+
+Imaging
+Chest x-ray 7/1/26 right lower lobe airspace opacity consistent with pneumonia.
+CT chest without contrast 7/1/26 right lower lobe consolidation, no pleural effusion or cavitation.
+
+Assessment/Plan:
+Joan Smith6 is a synthetic 48-year-old female admitted for sepsis due to community-acquired pneumonia with mild acute hypoxemic respiratory failure.
+Assessment & Plan
+Sepsis due to community-acquired pneumonia
+- Continue ceftriaxone and azithromycin
+- Follow sputum and blood cultures
+- Wean oxygen as tolerated
+- Monitor fever curve and leukocytosis
+

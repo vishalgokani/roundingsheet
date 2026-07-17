@@ -1,0 +1,101 @@
+Internal Medicine Daily Progress Note
+
+Synthetic sample note disclaimer: This note is entirely fictional, created for software testing and publication figures. It is not based on any real patient, encounter, chart, or clinical event.
+
+ Patient Name:  Joan Smith4	Today's Date:  7/1/2026
+ Medical Record No.:  SYN0008	Date of Admission:  6/29/2026
+ Date of Birth:  1/9/1949 	Location:  1512
+ Age/Sex:  77 y.o.  female 	Attending Physician:  Dr. Example
+
+C/C or reason for admission: cough
+
+Subjective:
+
+Patient reports less chest tightness today. Cough remains nonproductive. She denies fever, pleuritic chest pain, nausea, or confusion.
+
+
+Objective:
+
+Vital Signs
+Current:
+Temp: 98.6 F (37.0 C)	Pulse: 90	Resp: 20	BP: 124/70	SpO2: 91 %	Weight: 61.5 kg (136 lb)
+
+
+Body mass index is 23.4 kg/m2.
+
+Ranges:
+Systolic (24hrs), Avg:122 , Min:110 , Max:136
+Diastolic (24hrs), Avg:70, Min:60, Max:80
+
+Temp  Avg: 98.7 F (37.1 C)  Min: 98.0 F (36.7 C)  Max: 99.4 F (37.4 C)
+Pulse  Avg: 92.7  Min: 82  Max: 104
+Resp  Avg: 20.6  Min: 18  Max: 24
+SpO2  Avg: 91.4 %  Min: 87 %  Max: 94 %
+
+
+Intake/Output Summary (Last 24 hours) at 7/1/2026 0625
+Last data filed at 7/1/2026 0600
+Gross per 24 hour
+Intake	1000 ml
+Output	1050 ml
+Net	-50 ml
+
+
+Physical Exam
+General:  No distress
+Eye:  no scleral icterus
+ENT: moist mucous membranes
+Neck: Supple
+CV: Normal rate and Regular rhythm
+Pulm: Expiratory wheezes, diminished breath sounds throughout
+GI: Abdomen soft and nontender
+MSK: No edema
+Neurological: Awake and alert
+Skin: Warm and dry
+Psych: Appropriate affect
+
+New Labs and imaging- reviewed by me
+
+Results for orders placed or performed during the hospital encounter of 06/29/26 (from the past 24 hours)
+BASIC METABOLIC PANEL
+	Collection Time: 7/1/2026  5:36 AM
+Result	Value
+	Sodium	138
+	Potassium	4.2
+	Chloride	99
+	CO2	33 (H)
+	Glucose	132 (H)
+	BUN	20.0
+	Creatinine	0.94
+	Calcium	8.8
+	eGFR	69
+MAGNESIUM
+	Collection Time: 7/1/2026  5:36 AM
+Result	Value
+	Magnesium	1.9
+CBC WITH DIFFERENTIAL
+	Collection Time: 7/1/2026  5:36 AM
+Result	Value
+	WBC	11.20 (H)
+	RBC	4.02
+	Hgb	12.4
+	Hct	37.5
+	Platelet Count	245
+PHOSPHORUS, INORGANIC
+	Collection Time: 7/1/2026  5:36 AM
+Result	Value
+	Phosphorus	3.0
+
+Imaging
+Chest x-ray 7/1/26 hyperinflation and chronic interstitial changes, no focal pneumonia.
+Respiratory viral panel 7/1/26 positive for rhinovirus.
+
+Assessment/Plan:
+Joan Smith4 is a synthetic 77-year-old female with COPD admitted for viral-triggered COPD exacerbation with mild acute hypoxemic respiratory failure.
+Assessment & Plan
+COPD exacerbation due to rhinovirus
+- Continue prednisone and scheduled bronchodilators
+- Incentive spirometry
+- Wean oxygen for goal saturation 88-92%
+- No focal bacterial pneumonia on imaging
+

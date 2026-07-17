@@ -1,0 +1,112 @@
+Internal Medicine Daily Progress Note
+
+Synthetic sample note disclaimer: This note is entirely fictional, created for software testing and publication figures. It is not based on any real patient, encounter, chart, or clinical event.
+
+ Patient Name:  Joan Smith2	Today's Date:  7/1/2026
+ Medical Record No.:  SYN0012	Date of Admission:  6/30/2026
+ Date of Birth:  7/7/1988 	Location:  1306
+ Age/Sex:  38 y.o.  female 	Attending Physician:  Dr. Example
+
+C/C or reason for admission: abdominal pain
+
+Subjective:
+
+Patient reports epigastric pain is improved but still present after meals. Nausea is controlled. She denies fever, hematemesis, melena, chest pain, or dyspnea.
+
+
+Objective:
+
+Vital Signs
+Current:
+Temp: 98.5 F (36.9 C)	Pulse: 84	Resp: 18	BP: 118/70	SpO2: 98 %	Weight: 66.0 kg (145 lb)
+
+
+Body mass index is 24.2 kg/m2.
+
+Ranges:
+Systolic (24hrs), Avg:116 , Min:102 , Max:130
+Diastolic (24hrs), Avg:70, Min:60, Max:82
+
+Temp  Avg: 98.6 F (37.0 C)  Min: 98.0 F (36.7 C)  Max: 99.2 F (37.3 C)
+Pulse  Avg: 88.1  Min: 76  Max: 102
+Resp  Avg: 18.2  Min: 16  Max: 22
+SpO2  Avg: 97.6 %  Min: 95 %  Max: 100 %
+
+
+Intake/Output Summary (Last 24 hours) at 7/1/2026 0612
+Last data filed at 7/1/2026 0600
+Gross per 24 hour
+Intake	2400 ml
+Output	1300 ml
+Net	1100 ml
+
+
+Physical Exam
+General:  No distress
+Eye:  no scleral icterus
+ENT: moist mucous membranes
+Neck: Supple
+CV: Normal rate and Regular rhythm
+Pulm: Clear bilaterally
+GI: Abdomen soft, mild epigastric tenderness, no rebound
+MSK: No edema
+Neurological: Awake and alert, A&O x3
+Skin: Warm and dry
+Psych: Appropriate affect
+
+New Labs and imaging- reviewed by me
+
+Results for orders placed or performed during the hospital encounter of 06/30/26 (from the past 24 hours)
+COMPREHENSIVE METABOLIC PANEL
+	Collection Time: 7/1/2026  5:25 AM
+Result	Value
+	Sodium	136
+	Potassium	3.9
+	Chloride	104
+	CO2	23
+	Glucose	101 (H)
+	BUN	12.0
+	Creatinine	0.72
+	Calcium	8.1 (L)
+	Total Protein	6.1 (L)
+	Albumin	3.1 (L)
+	Alk Phos	126 (H)
+	AST (SGOT)	62 (H)
+	ALT (SGPT)	48
+	Bilirubin, Total	1.1
+	eGFR	112
+MAGNESIUM
+	Collection Time: 7/1/2026  5:25 AM
+Result	Value
+	Magnesium	1.7
+PHOSPHORUS, INORGANIC
+	Collection Time: 7/1/2026  5:25 AM
+Result	Value
+	Phosphorus	2.6
+CBC WITH DIFFERENTIAL
+	Collection Time: 7/1/2026  5:25 AM
+Result	Value
+	WBC	10.20
+	RBC	3.95
+	Hgb	11.8 (L)
+	Hct	35.2 (L)
+	Platelet Count	202
+PROTHROMBIN TIME (PT) WITH INR
+	Collection Time: 7/1/2026  5:25 AM
+Result	Value
+	PT	13.8
+	INR	1.1
+
+Imaging
+CT abdomen pelvis with contrast 7/1/26 acute interstitial pancreatitis without necrosis or organized fluid collection.
+RUQ ultrasound 7/1/26 gallstones without biliary ductal dilation.
+
+Assessment/Plan:
+Joan Smith2 is a synthetic 38-year-old female admitted for mild acute gallstone pancreatitis, clinically improving with IV fluids, analgesia, and diet advancement.
+Assessment & Plan
+Acute gallstone pancreatitis
+- Continue IV fluids and pain control
+- Advance to low-fat diet as tolerated
+- Trend CMP
+- Surgery referral for interval cholecystectomy planning
+

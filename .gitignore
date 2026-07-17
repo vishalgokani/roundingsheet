@@ -1,0 +1,7 @@
+__pycache__/
+**/__pycache__/
+*.py[cod]
+.pytest_cache/
+tmp/
+rounding_sheet.pdf
+**/rounding_sheet.pdf
