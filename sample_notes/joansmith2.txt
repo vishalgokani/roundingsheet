@@ -4,7 +4,7 @@ Synthetic sample note disclaimer: This note is entirely fictional, created for s
 
  Patient Name:  Joan Smith2	Today's Date:  7/1/2026
  Medical Record No.:  SYN0012	Date of Admission:  6/30/2026
- Date of Birth:  7/7/1988 	Location:  1306
+ Date of Birth:  7/7/1988	Location:  Example2
  Age/Sex:  38 y.o.  female 	Attending Physician:  Dr. Example
 
 C/C or reason for admission: abdominal pain

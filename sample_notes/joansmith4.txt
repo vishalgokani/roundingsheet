@@ -4,7 +4,7 @@ Synthetic sample note disclaimer: This note is entirely fictional, created for s
 
  Patient Name:  Joan Smith4	Today's Date:  7/1/2026
  Medical Record No.:  SYN0008	Date of Admission:  6/29/2026
- Date of Birth:  1/9/1949 	Location:  1512
+ Date of Birth:  1/9/1949	Location:  Example4
  Age/Sex:  77 y.o.  female 	Attending Physician:  Dr. Example
 
 C/C or reason for admission: cough

@@ -4,7 +4,7 @@ Synthetic sample note disclaimer: This note is entirely fictional, created for s
 
  Patient Name:  John Smith6	Today's Date:  7/1/2026
  Medical Record No.:  SYN0006	Date of Admission:  6/30/2026
- Date of Birth:  5/30/1971 	Location:  1410
+ Date of Birth:  5/30/1971	Location:  Example12
  Age/Sex:  55 y.o.  male 	Attending Physician:  Dr. Example
 
 C/C or reason for admission: confusion

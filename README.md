@@ -2,7 +2,7 @@
 
 Generate a compact PDF rounding sheet from Epic-exported inpatient progress notes saved as plain-text files.
 
-This repository keeps the original prototype in `old_roundingsheet/` unchanged. The current script is in `roundingsheet/make_rounding_sheet.py` and reads room number, patient name, vitals, I/O, labs, imaging, and the one-liner directly from the note text rather than from file names.
+The current script is [roundingsheet/make_rounding_sheet.py](roundingsheet/make_rounding_sheet.py). It reads room number, patient name, vitals, I/O, labs, imaging, and the one-liner directly from note text rather than from file names. The original prototype remains in `old_roundingsheet/`.
 
 ## Install
 
@@ -15,7 +15,7 @@ conda activate roundingsheet
 pip install -r requirements.txt
 ```
 
-If the `roundingsheet` environment already exists but dependencies have not been installed yet:
+If the conda environment already exists:
 
 ```powershell
 cd C:\GitHub\roundingsheet
@@ -25,7 +25,7 @@ pip install -r requirements.txt
 
 ## Run
 
-For future runs, activate the same conda environment first. Pass the directory containing the day's exported note `.txt` files as the positional argument. The file names do not matter.
+Activate the environment, then pass the folder containing progress-note `.txt` files:
 
 ```powershell
 cd C:\GitHub\roundingsheet
@@ -33,60 +33,57 @@ conda activate roundingsheet
 python .\roundingsheet\make_rounding_sheet.py C:\GitHub\roundingsheet\sample_notes
 ```
 
-By default, the output PDF is written into the same directory as the input notes. For example, the command above writes:
+By default, the PDF is written into the same folder as the input notes:
 
 ```text
 C:\GitHub\roundingsheet\sample_notes\rounding_sheet.pdf
 ```
 
-The input directory can be anywhere on the computer. This writes `C:\todaysnotes\rounding_sheet.pdf` automatically:
+## Layout Options
+
+Choose 6 to 10 patients per page:
 
 ```powershell
-cd C:\GitHub\roundingsheet
-conda activate roundingsheet
-python .\roundingsheet\make_rounding_sheet.py C:\todaysnotes
+python .\roundingsheet\make_rounding_sheet.py C:\GitHub\roundingsheet\sample_notes --patients-per-page 6
+python .\roundingsheet\make_rounding_sheet.py C:\GitHub\roundingsheet\sample_notes --patients-per-page 10
 ```
 
-You can still override the output path if needed:
+Choose a font preset:
 
 ```powershell
-python .\roundingsheet\make_rounding_sheet.py C:\todaysnotes --output C:\somewhere_else\rounding_sheet.pdf
+python .\roundingsheet\make_rounding_sheet.py C:\GitHub\roundingsheet\sample_notes --font-size small
+python .\roundingsheet\make_rounding_sheet.py C:\GitHub\roundingsheet\sample_notes --font-size large
+```
+
+Available font sizes are `extra-small`, `small`, `medium`, and `large`. The default is `medium`.
+
+Remove the Imaging column and widen the blank Notes column:
+
+```powershell
+python .\roundingsheet\make_rounding_sheet.py C:\GitHub\roundingsheet\sample_notes --no-imaging
+```
+
+Options can be combined:
+
+```powershell
+python .\roundingsheet\make_rounding_sheet.py C:\GitHub\roundingsheet\sample_notes --patients-per-page 6 --font-size large --no-imaging
 ```
 
 ## Expected Note Format
 
-Save one full progress note per patient as a `.txt` file. The script expects the Epic export to include these text anchors:
+Save one full progress note per patient as a `.txt` file. The script expects these text anchors:
 
 - `Patient Name:` near the top of the note.
 - `Today's Date:` near the top of the note. Lab results from this date are preferred.
 - `Location:` or `Locations:` near the top of the note.
-- `Vital Signs`, followed by `Ranges:` with systolic, diastolic, temperature, pulse, respiratory rate, and SpO2 min/max rows.
+- `Vital Signs`, followed by `Ranges:` with min/max rows.
 - `Intake/Output Summary`, followed by `Intake`, `Output`, and `Net` rows.
-- `New Labs and imaging- reviewed by me`, followed by Epic result tables with `Collection Time:` and `Result Value` rows.
-- `Imaging` for imaging text.
+- `New Labs and imaging- reviewed by me`, followed by Epic result tables with `Collection Time:` and `Result Value`.
+- `Imaging` for imaging text, unless using `--no-imaging`.
 - `Assessment/Plan:` or `Assessment`, followed immediately by the one-line patient summary.
 
-The script keeps the most recent value for each lab from the note date when same-day labs are present. If no lab rows match the note date, it falls back to the most recent lab collection date in the note so overnight notes do not produce blank fishbones. Abnormal flags such as `(H)` and `(L)` are compacted to values like `10.2L` or `18H`.
+The script keeps the most recent value for each lab from the note date when same-day labs are present. If no lab rows match the note date, it falls back to the most recent lab collection date in the note. Abnormal flags such as `(H)` and `(L)` are compacted to values like `10.2L` or `18H`.
 
-## Output Columns
+## Sample Notes
 
-The PDF columns are:
-
-1. Room
-2. Patient / one-liner
-3. Vitals / I&O
-4. CBC
-5. BMP
-6. LFT
-7. CaMgPhos
-8. Coags
-9. Imaging
-10. Notes
-
-The Notes column is intentionally blank for handwritten or typed rounding notes.
-
-The current PDF layout targets about 8 patients per landscape letter page for legibility.
-
-## Development Notes
-
-The project is intentionally small for clinical workflow testing and eventual scholarly publication. Future publication-oriented additions may include package metadata, de-identified test fixtures, parser unit tests, example output images, and a JOSS paper draft.
+The top-level notes in [sample_notes](sample_notes) are entirely synthetic and intended for testing, demonstrations, and publication figures.

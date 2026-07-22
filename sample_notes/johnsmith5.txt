@@ -4,7 +4,7 @@ Synthetic sample note disclaimer: This note is entirely fictional, created for s
 
  Patient Name:  John Smith5	Today's Date:  7/1/2026
  Medical Record No.:  SYN0005	Date of Admission:  6/28/2026
- Date of Birth:  12/4/1968 	Location:  H307/H30702
+ Date of Birth:  12/4/1968	Location:  Example11
  Age/Sex:  57 y.o.  male 	Attending Physician:  Dr. Example
 
 C/C or reason for admission: abdominal swelling

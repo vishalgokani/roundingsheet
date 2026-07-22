@@ -4,7 +4,7 @@ Synthetic sample note disclaimer: This note is entirely fictional, created for s
 
  Patient Name:  John Smith3	Today's Date:  7/1/2026
  Medical Record No.:  SYN0003	Date of Admission:  6/29/2026
- Date of Birth:  3/14/1962 	Location:  H301/H30101
+ Date of Birth:  3/14/1962	Location:  Example9
  Age/Sex:  64 y.o.  male 	Attending Physician:  Dr. Example
 
 C/C or reason for admission: shortness of breath

@@ -57,6 +57,14 @@ LAB_NAME_MAP = {
 }
 
 
+FONT_SCALES = {
+    "extra-small": 0.85,
+    "small": 0.95,
+    "medium": 1.0,
+    "large": 1.15,
+}
+
+
 def read_note(path: Path) -> str:
     return path.read_text(encoding="utf-8", errors="replace").replace("\r\n", "\n")
 
@@ -374,19 +382,21 @@ def draw_value_left(c, value, x, y, size=5.0, max_chars=12):
     c.drawString(x, y, str(value)[:max_chars])
 
 
-def draw_room_text(c, text, x, y_top, width):
+def draw_room_text(c, text, x, y_top, width, font_scale=1.0):
     if not text:
         return
 
-    size = 6.8
-    while size > 5.0 and c.stringWidth(text, "Times-Bold", size) > width:
+    size = 6.8 * font_scale
+    min_size = 5.0 * font_scale
+    while size > min_size and c.stringWidth(text, "Times-Bold", size) > width:
         size -= 0.2
+    size = max(size, min_size)
 
     c.setFont("Times-Bold", size)
     c.drawString(x, y_top, text)
 
 
-def draw_cbc_cell(c, x, y_top, w, h, labs):
+def draw_cbc_cell(c, x, y_top, w, h, labs, font_scale=1.0):
     cx = x + w * 0.50
     cy = y_top - h * 0.52
 
@@ -407,13 +417,14 @@ def draw_cbc_cell(c, x, y_top, w, h, labs):
     c.line(right_joint, cy, right_joint + arm, cy + rise)
     c.line(right_joint, cy, right_joint + arm, cy - rise)
 
-    draw_value(c, labs.get("WBC", ""), x + w * 0.20, cy - 2, size=5.0, max_chars=9)
-    draw_value(c, labs.get("HGB", ""), cx, cy + h * 0.24, size=5.0, max_chars=9)
-    draw_value(c, labs.get("HCT", ""), cx, cy - h * 0.26, size=5.0, max_chars=9)
-    draw_value(c, labs.get("PLT", ""), x + w * 0.80, cy - 2, size=5.0, max_chars=9)
+    lab_size = 5.0 * font_scale
+    draw_value(c, labs.get("WBC", ""), x + w * 0.20, cy - 2, size=lab_size, max_chars=9)
+    draw_value(c, labs.get("HGB", ""), cx, cy + h * 0.24, size=lab_size, max_chars=9)
+    draw_value(c, labs.get("HCT", ""), cx, cy - h * 0.26, size=lab_size, max_chars=9)
+    draw_value(c, labs.get("PLT", ""), x + w * 0.80, cy - 2, size=lab_size, max_chars=9)
 
 
-def draw_bmp_cell(c, x, y_top, w, h, labs):
+def draw_bmp_cell(c, x, y_top, w, h, labs, font_scale=1.0):
     grid_w = w * 0.55
     cell_w = grid_w / 3
     cell_h = h * 0.21
@@ -435,18 +446,19 @@ def draw_bmp_cell(c, x, y_top, w, h, labs):
     c.line(chev_x, chev_y, chev_x + arm, chev_y + rise)
     c.line(chev_x, chev_y, chev_x + arm, chev_y - rise)
 
-    draw_value(c, labs.get("NA", ""), gx + cell_w * 0.5, gy - cell_h * 0.72, size=5.0, max_chars=8)
-    draw_value(c, labs.get("CL", ""), gx + cell_w * 1.5, gy - cell_h * 0.72, size=5.0, max_chars=8)
-    draw_value(c, labs.get("BUN", ""), gx + cell_w * 2.5, gy - cell_h * 0.72, size=5.0, max_chars=8)
+    lab_size = 5.0 * font_scale
+    draw_value(c, labs.get("NA", ""), gx + cell_w * 0.5, gy - cell_h * 0.72, size=lab_size, max_chars=8)
+    draw_value(c, labs.get("CL", ""), gx + cell_w * 1.5, gy - cell_h * 0.72, size=lab_size, max_chars=8)
+    draw_value(c, labs.get("BUN", ""), gx + cell_w * 2.5, gy - cell_h * 0.72, size=lab_size, max_chars=8)
 
-    draw_value(c, labs.get("K", ""), gx + cell_w * 0.5, gy - cell_h * 1.72, size=5.0, max_chars=8)
-    draw_value(c, labs.get("HCO3", ""), gx + cell_w * 1.5, gy - cell_h * 1.72, size=5.0, max_chars=8)
-    draw_value(c, labs.get("CRET", ""), gx + cell_w * 2.5, gy - cell_h * 1.72, size=5.0, max_chars=8)
+    draw_value(c, labs.get("K", ""), gx + cell_w * 0.5, gy - cell_h * 1.72, size=lab_size, max_chars=8)
+    draw_value(c, labs.get("HCO3", ""), gx + cell_w * 1.5, gy - cell_h * 1.72, size=lab_size, max_chars=8)
+    draw_value(c, labs.get("CRET", ""), gx + cell_w * 2.5, gy - cell_h * 1.72, size=lab_size, max_chars=8)
 
-    draw_value_left(c, labs.get("GLU", ""), chev_x + arm + 3, chev_y - 2, size=4.8, max_chars=12)
+    draw_value_left(c, labs.get("GLU", ""), chev_x + arm + 3, chev_y - 2, size=4.8 * font_scale, max_chars=12)
 
 
-def draw_lft_cell(c, x, y_top, w, h, labs):
+def draw_lft_cell(c, x, y_top, w, h, labs, font_scale=1.0):
     cx = x + w * 0.50
     cy = y_top - h * 0.52
 
@@ -467,15 +479,16 @@ def draw_lft_cell(c, x, y_top, w, h, labs):
     c.line(right_joint, cy, right_joint + arm, cy + rise)
     c.line(right_joint, cy, right_joint + arm, cy - rise)
 
-    draw_value(c, labs.get("AST", ""), x + w * 0.20, cy - 2, size=5.0, max_chars=8)
-    draw_value(c, labs.get("ALT", ""), x + w * 0.80, cy - 2, size=5.0, max_chars=8)
+    lab_size = 5.0 * font_scale
+    draw_value(c, labs.get("AST", ""), x + w * 0.20, cy - 2, size=lab_size, max_chars=8)
+    draw_value(c, labs.get("ALT", ""), x + w * 0.80, cy - 2, size=lab_size, max_chars=8)
 
-    draw_value(c, labs.get("TBIL", ""), cx, cy + h * 0.25, size=5.0, max_chars=8)
-    draw_value(c, labs.get("DBIL", ""), cx, cy + h * 0.08, size=5.0, max_chars=8)
-    draw_value(c, labs.get("ALKPHOS", ""), cx, cy - h * 0.28, size=5.0, max_chars=8)
+    draw_value(c, labs.get("TBIL", ""), cx, cy + h * 0.25, size=lab_size, max_chars=8)
+    draw_value(c, labs.get("DBIL", ""), cx, cy + h * 0.08, size=lab_size, max_chars=8)
+    draw_value(c, labs.get("ALKPHOS", ""), cx, cy - h * 0.28, size=lab_size, max_chars=8)
 
 
-def draw_mineral_cell(c, x, y_top, w, h, labs):
+def draw_mineral_cell(c, x, y_top, w, h, labs, font_scale=1.0):
     cx = x + w * 0.50
 
     stem_top = y_top - h * 0.20
@@ -490,12 +503,13 @@ def draw_mineral_cell(c, x, y_top, w, h, labs):
     c.line(cx, branch_y, cx - branch_arm, branch_y - branch_drop)
     c.line(cx, branch_y, cx + branch_arm, branch_y - branch_drop)
 
-    draw_value(c, labs.get("CA", ""), x + w * 0.22, stem_top - 2, size=5.0, max_chars=8)
-    draw_value(c, labs.get("MG", ""), x + w * 0.78, stem_top - 2, size=5.0, max_chars=8)
-    draw_value(c, labs.get("PO4", ""), cx, branch_y - branch_drop - 8, size=5.0, max_chars=8)
+    lab_size = 5.0 * font_scale
+    draw_value(c, labs.get("CA", ""), x + w * 0.22, stem_top - 2, size=lab_size, max_chars=8)
+    draw_value(c, labs.get("MG", ""), x + w * 0.78, stem_top - 2, size=lab_size, max_chars=8)
+    draw_value(c, labs.get("PO4", ""), cx, branch_y - branch_drop - 8, size=lab_size, max_chars=8)
 
 
-def draw_coag_cell(c, x, y_top, w, h, labs):
+def draw_coag_cell(c, x, y_top, w, h, labs, font_scale=1.0):
     cx = x + w * 0.42
     cy = y_top - h * 0.50
 
@@ -511,12 +525,13 @@ def draw_coag_cell(c, x, y_top, w, h, labs):
     c.line(chev_x, cy + 4, chev_x + arm, cy + 4 + rise)
     c.line(chev_x, cy + 4, chev_x + arm, cy + 4 - rise)
 
-    draw_value(c, labs.get("PT", ""), cx, cy + h * 0.21, size=5.0, max_chars=7)
-    draw_value(c, labs.get("PTT", ""), cx, cy - h * 0.22, size=5.0, max_chars=7)
-    draw_value_left(c, labs.get("INR", ""), chev_x + arm + 2, cy + 1, size=5.0, max_chars=7)
+    lab_size = 5.0 * font_scale
+    draw_value(c, labs.get("PT", ""), cx, cy + h * 0.21, size=lab_size, max_chars=7)
+    draw_value(c, labs.get("PTT", ""), cx, cy - h * 0.22, size=lab_size, max_chars=7)
+    draw_value_left(c, labs.get("INR", ""), chev_x + arm + 2, cy + 1, size=lab_size, max_chars=7)
 
 
-def draw_header(c, y, col_x):
+def draw_header(c, y, col_x, include_imaging=True, font_scale=1.0):
     headers = [
         "Room",
         "Patient / One-liner",
@@ -526,16 +541,15 @@ def draw_header(c, y, col_x):
         "LFT",
         "CaMgPhos",
         "Coags",
-        "Imaging",
-        "Notes",
     ]
+    headers.extend(["Imaging", "Notes"] if include_imaging else ["Notes"])
 
-    c.setFont("Times-Bold", 7.2)
+    c.setFont("Times-Bold", 7.2 * font_scale)
     for label, x in zip(headers, col_x):
         c.drawString(x, y, label)
 
 
-def generate_pdf(input_dir: Path, output_pdf: Path):
+def generate_pdf(input_dir: Path, output_pdf: Path, patients_per_page=8, include_imaging=True, font_scale=1.0):
     page_size = landscape(letter)
     page_w, page_h = page_size
 
@@ -556,29 +570,36 @@ def generate_pdf(input_dir: Path, output_pdf: Path):
         0.78 * inch,  # LFT
         0.72 * inch,  # Ca/Mg/Phos
         0.72 * inch,  # Coags
-        1.52 * inch,  # Imaging
     ]
+    if include_imaging:
+        fixed_w.append(1.52 * inch)  # Imaging
+
     col_w = fixed_w + [usable_w - sum(fixed_w)]
 
     col_x = [margin]
     for width in col_w[:-1]:
         col_x.append(col_x[-1] + width)
 
-    # Taller rows make the sheet fit about 8 patients per landscape page.
-    row_h = 1.00 * inch
+    header_gap = 0.09 * inch
+    row_h = (top - header_gap - bottom) / patients_per_page
     fishbone_h = 0.62 * inch
+    cell_top_padding = 7
+    patient_leading = 6.6 * font_scale
+    detail_leading = 6.4 * font_scale
+    patient_max_lines = max(1, int((row_h - cell_top_padding - 2) / patient_leading))
+    detail_max_lines = max(1, int((row_h - cell_top_padding - 2) / detail_leading))
     patient_files = sorted(input_dir.glob("*.txt"))
 
     y = top
-    draw_header(c, y, col_x)
-    y -= 0.09 * inch
+    draw_header(c, y, col_x, include_imaging=include_imaging, font_scale=font_scale)
+    y -= header_gap
 
     for path in patient_files:
         if y - row_h < bottom:
             c.showPage()
             y = top
-            draw_header(c, y, col_x)
-            y -= 0.09 * inch
+            draw_header(c, y, col_x, include_imaging=include_imaging, font_scale=font_scale)
+            y -= header_gap
 
         note = parse_note(path)
         labs = note["labs"]
@@ -591,30 +612,68 @@ def generate_pdf(input_dir: Path, output_pdf: Path):
             c.line(x_pos, y + 2, x_pos, y - row_h)
         c.line(page_w - margin, y + 2, page_w - margin, y - row_h)
 
-        draw_room_text(c, note["room"], col_x[0] + 2, y - 7, col_w[0] - 4)
+        draw_room_text(c, note["room"], col_x[0] + 2, y - cell_top_padding, col_w[0] - 4, font_scale=font_scale)
 
         patient_text = f"{note['patient_name']}\n{note['oneliner']}".strip()
-        draw_wrapped_text(c, patient_text, col_x[1] + 2, y - 7, col_w[1] - 4, size=6.0, leading=6.6, max_lines=10)
+        draw_wrapped_text(c, patient_text, col_x[1] + 2, y - cell_top_padding, col_w[1] - 4, size=6.0 * font_scale, leading=patient_leading, max_lines=patient_max_lines)
 
-        draw_wrapped_text(c, note["vitals"], col_x[2] + 2, y - 7, col_w[2] - 4, size=5.8, leading=6.4, max_lines=10)
+        draw_wrapped_text(c, note["vitals"], col_x[2] + 2, y - cell_top_padding, col_w[2] - 4, size=5.8 * font_scale, leading=detail_leading, max_lines=detail_max_lines)
 
         fishbone_y = y - (row_h - fishbone_h) / 2
-        draw_cbc_cell(c, col_x[3], fishbone_y, col_w[3], fishbone_h, labs)
-        draw_bmp_cell(c, col_x[4], fishbone_y, col_w[4], fishbone_h, labs)
-        draw_lft_cell(c, col_x[5], fishbone_y, col_w[5], fishbone_h, labs)
-        draw_mineral_cell(c, col_x[6], fishbone_y, col_w[6], fishbone_h, labs)
-        draw_coag_cell(c, col_x[7], fishbone_y, col_w[7], fishbone_h, labs)
+        draw_cbc_cell(c, col_x[3], fishbone_y, col_w[3], fishbone_h, labs, font_scale=font_scale)
+        draw_bmp_cell(c, col_x[4], fishbone_y, col_w[4], fishbone_h, labs, font_scale=font_scale)
+        draw_lft_cell(c, col_x[5], fishbone_y, col_w[5], fishbone_h, labs, font_scale=font_scale)
+        draw_mineral_cell(c, col_x[6], fishbone_y, col_w[6], fishbone_h, labs, font_scale=font_scale)
+        draw_coag_cell(c, col_x[7], fishbone_y, col_w[7], fishbone_h, labs, font_scale=font_scale)
 
-        draw_wrapped_text(c, note["imaging"], col_x[8] + 2, y - 7, col_w[8] - 4, size=5.8, leading=6.4, max_lines=10)
+        if include_imaging:
+            draw_wrapped_text(c, note["imaging"], col_x[8] + 2, y - cell_top_padding, col_w[8] - 4, size=5.8 * font_scale, leading=detail_leading, max_lines=detail_max_lines)
 
         y -= row_h
 
     c.save()
 
 
+def patients_per_page_arg(value: str) -> int:
+    try:
+        patients_per_page = int(value)
+    except ValueError as exc:
+        raise argparse.ArgumentTypeError("patients per page must be an integer from 6 to 10") from exc
+
+    if not 6 <= patients_per_page <= 10:
+        raise argparse.ArgumentTypeError("patients per page must be an integer from 6 to 10")
+    return patients_per_page
+
+
+def font_size_arg(value: str) -> str:
+    normalized = value.strip().lower()
+    if normalized not in FONT_SCALES:
+        choices = ", ".join(FONT_SCALES)
+        raise argparse.ArgumentTypeError(f"font size must be one of: {choices}")
+    return normalized
+
+
 def main():
     parser = argparse.ArgumentParser(description="Generate a compact PDF rounding sheet from Epic-exported progress note text files.")
     parser.add_argument("input_dir", type=Path, help="Directory containing one .txt progress note per patient.")
+    parser.add_argument(
+        "--patients-per-page",
+        type=patients_per_page_arg,
+        default=8,
+        help="Number of patient rows per page, from 6 to 10. Default: 8.",
+    )
+    parser.add_argument(
+        "--no-imaging",
+        action="store_true",
+        help="Remove the Imaging column and expand the blank Notes column into that space.",
+    )
+    parser.add_argument(
+        "--font-size",
+        type=font_size_arg,
+        default="medium",
+        choices=list(FONT_SCALES),
+        help="PDF font size preset. Choices: extra-small, small, medium, large. Default: medium.",
+    )
     parser.add_argument(
         "--output",
         "-o",
@@ -629,7 +688,14 @@ def main():
         raise NotADirectoryError(f"Input path is not a directory: {args.input_dir}")
 
     output_pdf = args.output if args.output else args.input_dir / "rounding_sheet.pdf"
-    generate_pdf(args.input_dir, output_pdf)
+    output_pdf.parent.mkdir(parents=True, exist_ok=True)
+    generate_pdf(
+        args.input_dir,
+        output_pdf,
+        patients_per_page=args.patients_per_page,
+        include_imaging=not args.no_imaging,
+        font_scale=FONT_SCALES[args.font_size],
+    )
     print(f"Wrote {output_pdf}")
 
 

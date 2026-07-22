@@ -4,7 +4,7 @@ Synthetic sample note disclaimer: This note is entirely fictional, created for s
 
  Patient Name:  Joan Smith1	Today's Date:  7/1/2026
  Medical Record No.:  SYN0011	Date of Admission:  6/30/2026
- Date of Birth:  11/25/1974 	Location:  H207/H20701
+ Date of Birth:  11/25/1974	Location:  Example1
  Age/Sex:  51 y.o.  female 	Attending Physician:  Dr. Example
 
 C/C or reason for admission: leg redness
