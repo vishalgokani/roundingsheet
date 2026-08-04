@@ -4,7 +4,7 @@ Synthetic sample note disclaimer: This note is entirely fictional, created for s
 
  Patient Name:  Joan Smith6	Today's Date:  7/1/2026
  Medical Record No.:  SYN0010	Date of Admission:  6/30/2026
- Date of Birth:  10/2/1977	Location:  Example6
+ Date of Birth:  10/2/1977	Location:  Example06
  Age/Sex:  48 y.o.  female 	Attending Physician:  Dr. Example
 
 C/C or reason for admission: pneumonia
@@ -109,4 +109,3 @@ Sepsis due to community-acquired pneumonia
 - Follow sputum and blood cultures
 - Wean oxygen as tolerated
 - Monitor fever curve and leukocytosis
-

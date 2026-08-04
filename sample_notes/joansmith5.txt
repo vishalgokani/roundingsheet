@@ -4,7 +4,7 @@ Synthetic sample note disclaimer: This note is entirely fictional, created for s
 
  Patient Name:  Joan Smith5	Today's Date:  7/1/2026
  Medical Record No.:  SYN0009	Date of Admission:  6/30/2026
- Date of Birth:  6/11/1984	Location:  Example5
+ Date of Birth:  6/11/1984	Location:  Example05
  Age/Sex:  42 y.o.  female 	Attending Physician:  Dr. Example
 
 C/C or reason for admission: fever
@@ -109,4 +109,3 @@ Sepsis due to pyelonephritis
 - Follow blood and urine cultures
 - Monitor fever curve and leukocytosis
 - Encourage oral intake and monitor creatinine
-

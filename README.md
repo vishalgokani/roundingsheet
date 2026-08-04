@@ -2,7 +2,7 @@
 
 Generate a compact PDF rounding sheet with fishbone lab diagrams from inpatient progress-note text files.
 
-The current usable workflow is [roundingsheet/make_rounding_sheet_from_text.py](roundingsheet/make_rounding_sheet_from_text.py). It reads room number, patient name, vitals, I/O, labs, imaging, and the one-liner directly from note text rather than from file names. The original prototype remains in `old_roundingsheet/`.
+The current usable workflow is [roundingsheet/make_rounding_sheet_from_text.py](roundingsheet/make_rounding_sheet_from_text.py). It reads room number, patient name, vitals, I/O, labs, and the one-liner directly from note text rather than from file names. The original prototype remains in `old_roundingsheet/`.
 
 ## Install
 
@@ -39,6 +39,12 @@ By default, the PDF is written into the same folder as the input notes:
 C:\GitHub\roundingsheet\sample_notes\rounding_sheet.pdf
 ```
 
+## Example Output
+
+Open the sample output PDF to see the final rounding sheet layout:
+
+[sample_notes/rounding_sheet.pdf](sample_notes/rounding_sheet.pdf)
+
 ## Layout Options
 
 Choose 6 to 10 patients per page:
@@ -57,16 +63,10 @@ python .\roundingsheet\make_rounding_sheet_from_text.py C:\GitHub\roundingsheet\
 
 Available font sizes are `extra-small`, `small`, `medium`, and `large`. The default is `medium`.
 
-Remove the Imaging column and widen the blank Notes column:
-
-```powershell
-python .\roundingsheet\make_rounding_sheet_from_text.py C:\GitHub\roundingsheet\sample_notes --no-imaging
-```
-
 Options can be combined:
 
 ```powershell
-python .\roundingsheet\make_rounding_sheet_from_text.py C:\GitHub\roundingsheet\sample_notes --patients-per-page 6 --font-size large --no-imaging
+python .\roundingsheet\make_rounding_sheet_from_text.py C:\GitHub\roundingsheet\sample_notes --patients-per-page 6 --font-size large
 ```
 
 ## Expected Note Format
@@ -79,16 +79,15 @@ Save one full progress note per patient as a `.txt` file. The script expects the
 - `Vital Signs`, followed by `Ranges:` with min/max rows.
 - `Intake/Output Summary`, followed by `Intake`, `Output`, and `Net` rows.
 - `New Labs and imaging- reviewed by me`, followed by Epic result tables with `Collection Time:` and `Result Value`.
-- `Imaging` for imaging text, unless using `--no-imaging`.
 - `Assessment/Plan:` or `Assessment`, followed immediately by the one-line patient summary.
 
 The script keeps the most recent value for each lab from the note date when same-day labs are present. If no lab rows match the note date, it falls back to the most recent lab collection date in the note. Abnormal flags such as `(H)` and `(L)` are compacted to values like `10.2L` or `18H`.
 
 ## Method 2: Hospital EMR Integration
 
-A true Epic, Cerner, or other EMR integration should not require clinicians to export CSV files manually. The intended hospital workflow is an IT-approved EMR button, print option, or embedded internal app that gathers structured patient data behind the scenes and sends it to the shared PDF renderer in [roundingsheet/pdf_renderer.py](roundingsheet/pdf_renderer.py).
+A true Epic, Cerner, or other EMR integration should not require clinicians to copy progress notes manually. The intended hospital workflow is an IT-approved EMR button, print option, SlicerDicer-derived export, reporting extract, or embedded internal app that gathers structured tabular data and sends it to the shared PDF renderer in [roundingsheet/pdf_renderer.py](roundingsheet/pdf_renderer.py).
 
-This repository does not include Epic/Cerner credentials, login automation, private API calls, or a fake production CSV workflow. Hospital IT should choose the local integration path and map approved EMR data into the renderer's normalized patient-record structure.
+This repository does not include Epic/Cerner credentials, login automation, or private API calls. Hospital IT should choose the local integration path and map approved EMR data into the renderer's normalized patient-record structure.
 
 See [docs/emr_integration.md](docs/emr_integration.md) for the proposed architecture and data contract for hospital IT review.
 

@@ -1,6 +1,6 @@
 # EMR Integration Design
 
-This document describes how hospital IT could connect the rounding sheet renderer to Epic, Cerner, or another EMR without requiring clinicians to manually export CSV files.
+This document describes how hospital IT could connect the rounding sheet renderer to Epic, Cerner, or another EMR without requiring clinicians to manually copy progress notes.
 
 ## Goal
 
@@ -11,7 +11,6 @@ The desired clinical workflow is a one-click print option inside the EMR:
 3. The EMR or an internal hospital service presents layout options:
    - patients per page, 6 to 10
    - font size: extra-small, small, medium, or large
-   - include or remove the imaging column
 4. A hospital-owned service retrieves the approved structured data.
 5. The service maps those data to the normalized patient-record structure.
 6. The renderer creates a PDF.
@@ -31,7 +30,6 @@ The repository does not provide:
 - screen scraping or login automation
 - direct access to a hospital EMR
 - assumptions about a hospital's database tables, APIs, or reporting exports
-- a production CSV-export workflow
 
 ## Possible Hospital Integration Patterns
 
@@ -40,6 +38,7 @@ Hospital IT should choose the integration pattern that fits the local EMR build,
 - an Epic or Cerner custom print/report workflow that launches the renderer through an internal service
 - an embedded internal web app launched from the EMR with patient-list context
 - a SMART on FHIR app if the local FHIR resources provide adequate census, encounter, vitals, lab, and patient-list context
+- an Epic SlicerDicer, Reporting Workbench, Clarity, Caboodle, or other locally approved export/reporting workflow
 - a hospital backend service that queries an approved reporting database or clinical data warehouse
 - another local interface already approved for clinical reporting and printing
 
@@ -80,7 +79,6 @@ The renderer accepts one record per patient. A future EMR adapter should constru
         "INR": "1.1",
         "PTT": "31",
     },
-    "imaging_summary": "CXR: mild pulmonary vascular congestion.",
     "notes": "",
 }
 ```
@@ -92,7 +90,7 @@ Lab flags should be compact strings such as `18H` or `10.2L`. The renderer also 
 Hospital IT should define:
 
 - how the clinician's selected census or patient list is identified
-- which EMR source supplies room, patient name, vitals, I/O, labs, and optional short imaging summaries
+- which EMR source supplies room, patient name, vitals, I/O, and labs
 - whether the output opens in print preview, downloads, or routes to a printer
 - where the renderer runs, such as an internal server, virtual desktop environment, or approved clinical reporting host
 - how audit logging, access control, PHI handling, and retention are governed locally

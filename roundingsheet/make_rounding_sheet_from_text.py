@@ -176,17 +176,6 @@ def parse_intake_output(text: str) -> str:
     return " ".join(parts)
 
 
-def parse_imaging(text: str) -> str:
-    match = re.search(
-        r"(?ims)^\s*Imaging:?\s*$\n(?P<body>.*?)(?=^\s*Assessment(?:/Plan)?\s*:?\s*$|\Z)",
-        text,
-    )
-    if not match:
-        return ""
-    lines = [normalize_spaces(line) for line in match.group("body").splitlines()]
-    return "\n".join(line for line in lines if line)
-
-
 def parse_collection_time(value: str):
     value = normalize_spaces(value)
     for fmt in ("%m/%d/%y %I:%M %p", "%m/%d/%Y %I:%M %p"):
@@ -319,22 +308,26 @@ def parse_note(path: Path):
         "vitals_summary": parse_vitals(text),
         "io_summary": parse_intake_output(text),
         "labs": parse_labs(text, today=today),
-        "imaging_summary": parse_imaging(text),
         "notes": "",
     }
 
 
+def room_sort_key(record: dict):
+    room = normalize_spaces(record.get("room", "")).lower()
+    return room, record.get("patient_name", "").lower()
+
+
 def parse_notes_from_directory(input_dir: Path):
-    return [parse_note(path) for path in sorted(input_dir.glob("*.txt"))]
+    patient_records = [parse_note(path) for path in input_dir.glob("*.txt")]
+    return sorted(patient_records, key=room_sort_key)
 
 
-def generate_pdf(input_dir: Path, output_pdf: Path, patients_per_page=8, include_imaging=True, font_scale=1.0):
+def generate_pdf(input_dir: Path, output_pdf: Path, patients_per_page=8, font_scale=1.0):
     patient_records = parse_notes_from_directory(input_dir)
     render_rounding_sheet(
         patient_records,
         output_pdf,
         patients_per_page=patients_per_page,
-        include_imaging=include_imaging,
         font_scale=font_scale,
     )
 
@@ -368,11 +361,6 @@ def main():
         help="Number of patient rows per page, from 6 to 10. Default: 8.",
     )
     parser.add_argument(
-        "--no-imaging",
-        action="store_true",
-        help="Remove the Imaging column and expand the blank Notes column into that space.",
-    )
-    parser.add_argument(
         "--font-size",
         type=font_size_arg,
         default="medium",
@@ -398,7 +386,6 @@ def main():
         args.input_dir,
         output_pdf,
         patients_per_page=args.patients_per_page,
-        include_imaging=not args.no_imaging,
         font_scale=FONT_SCALES[args.font_size],
     )
     print(f"Wrote {output_pdf}")

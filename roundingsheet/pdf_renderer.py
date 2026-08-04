@@ -23,7 +23,6 @@ class PatientRecord:
     vitals_summary: str = ""
     io_summary: str = ""
     labs: dict = field(default_factory=dict)
-    imaging_summary: str = ""
     notes: str = ""
 
 
@@ -44,7 +43,6 @@ def coerce_patient_record(record) -> PatientRecord:
         vitals_summary=record.get("vitals_summary", record.get("vitals", "")),
         io_summary=record.get("io_summary", ""),
         labs=labs,
-        imaging_summary=record.get("imaging_summary", record.get("imaging", "")),
         notes=record.get("notes", ""),
     )
 
@@ -248,7 +246,7 @@ def draw_coag_cell(c, x, y_top, w, h, labs, font_scale=1.0):
     draw_value_left(c, labs.get("INR", ""), chev_x + arm + 2, cy + 1, size=lab_size, max_chars=7)
 
 
-def draw_header(c, y, col_x, include_imaging=True, font_scale=1.0):
+def draw_header(c, y, col_x, font_scale=1.0):
     headers = [
         "Room",
         "Patient / One-liner",
@@ -258,15 +256,15 @@ def draw_header(c, y, col_x, include_imaging=True, font_scale=1.0):
         "LFT",
         "CaMgPhos",
         "Coags",
+        "Notes",
     ]
-    headers.extend(["Imaging", "Notes"] if include_imaging else ["Notes"])
 
     c.setFont("Times-Bold", 7.2 * font_scale)
     for label, x in zip(headers, col_x):
         c.drawString(x, y, label)
 
 
-def render_rounding_sheet(patient_records, output_pdf: Path, patients_per_page=8, include_imaging=True, font_scale=1.0):
+def render_rounding_sheet(patient_records, output_pdf: Path, patients_per_page=8, font_scale=1.0):
     patients = [coerce_patient_record(record) for record in patient_records]
     page_size = landscape(letter)
     page_w, page_h = page_size
@@ -281,7 +279,7 @@ def render_rounding_sheet(patient_records, output_pdf: Path, patients_per_page=8
     usable_w = page_w - 2 * margin
     fixed_w = [
         0.55 * inch,
-        1.45 * inch,
+        2.40 * inch,
         1.28 * inch,
         0.78 * inch,
         1.10 * inch,
@@ -289,8 +287,6 @@ def render_rounding_sheet(patient_records, output_pdf: Path, patients_per_page=8
         0.72 * inch,
         0.72 * inch,
     ]
-    if include_imaging:
-        fixed_w.append(1.52 * inch)
 
     col_w = fixed_w + [usable_w - sum(fixed_w)]
 
@@ -308,14 +304,14 @@ def render_rounding_sheet(patient_records, output_pdf: Path, patients_per_page=8
     detail_max_lines = max(1, int((row_h - cell_top_padding - 2) / detail_leading))
 
     y = top
-    draw_header(c, y, col_x, include_imaging=include_imaging, font_scale=font_scale)
+    draw_header(c, y, col_x, font_scale=font_scale)
     y -= header_gap
 
     for patient in patients:
         if y - row_h < bottom:
             c.showPage()
             y = top
-            draw_header(c, y, col_x, include_imaging=include_imaging, font_scale=font_scale)
+            draw_header(c, y, col_x, font_scale=font_scale)
             y -= header_gap
 
         labs = patient.labs
@@ -361,17 +357,16 @@ def render_rounding_sheet(patient_records, output_pdf: Path, patients_per_page=8
         draw_mineral_cell(c, col_x[6], fishbone_y, col_w[6], fishbone_h, labs, font_scale=font_scale)
         draw_coag_cell(c, col_x[7], fishbone_y, col_w[7], fishbone_h, labs, font_scale=font_scale)
 
-        if include_imaging:
-            draw_wrapped_text(
-                c,
-                patient.imaging_summary,
-                col_x[8] + 2,
-                y - cell_top_padding,
-                col_w[8] - 4,
-                size=5.8 * font_scale,
-                leading=detail_leading,
-                max_lines=detail_max_lines,
-            )
+        draw_wrapped_text(
+            c,
+            patient.notes,
+            col_x[8] + 2,
+            y - cell_top_padding,
+            col_w[8] - 4,
+            size=5.8 * font_scale,
+            leading=detail_leading,
+            max_lines=detail_max_lines,
+        )
 
         y -= row_h
 

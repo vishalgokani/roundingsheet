@@ -4,7 +4,7 @@ Synthetic sample note disclaimer: This note is entirely fictional, created for s
 
  Patient Name:  John Smith1	Today's Date:  7/1/2026
  Medical Record No.:  SYN0001	Date of Admission:  6/30/2026
- Date of Birth:  4/18/1958	Location:  Example7
+ Date of Birth:  4/18/1958	Location:  Example07
  Age/Sex:  68 y.o.  male 	Attending Physician:  Dr. Example
 
 C/C or reason for admission: black stools
@@ -109,4 +109,3 @@ Upper gastrointestinal bleeding
 - Trend hemoglobin every 8 hours
 - Maintain two large bore IVs
 - GI consulted for EGD
-

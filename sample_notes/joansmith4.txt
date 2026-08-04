@@ -4,7 +4,7 @@ Synthetic sample note disclaimer: This note is entirely fictional, created for s
 
  Patient Name:  Joan Smith4	Today's Date:  7/1/2026
  Medical Record No.:  SYN0008	Date of Admission:  6/29/2026
- Date of Birth:  1/9/1949	Location:  Example4
+ Date of Birth:  1/9/1949	Location:  Example04
  Age/Sex:  77 y.o.  female 	Attending Physician:  Dr. Example
 
 C/C or reason for admission: cough
@@ -98,4 +98,3 @@ COPD exacerbation due to rhinovirus
 - Incentive spirometry
 - Wean oxygen for goal saturation 88-92%
 - No focal bacterial pneumonia on imaging
-
