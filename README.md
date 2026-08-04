@@ -41,9 +41,9 @@ C:\GitHub\roundingsheet\sample_notes\rounding_sheet.pdf
 
 ## Example Output
 
-Open the sample output PDF to see the final rounding sheet layout:
+Screenshot of the first page of the sample rounding sheet:
 
-[sample_notes/rounding_sheet.pdf](sample_notes/rounding_sheet.pdf)
+![Sample rounding sheet](docs/assets/rounding_sheet_example.png)
 
 ## Layout Options
 
