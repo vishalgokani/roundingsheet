@@ -301,14 +301,15 @@ def parse_labs(text: str, today=None) -> dict:
 def parse_note(path: Path):
     text = read_note(path)
     today = parse_today_date(text)
+    oneliner = parse_oneliner(text)
     return {
         "room": parse_room(text),
         "patient_name": parse_patient_name(text),
-        "oneliner": parse_oneliner(text),
+        "oneliner": oneliner,
         "vitals_summary": parse_vitals(text),
         "io_summary": parse_intake_output(text),
         "labs": parse_labs(text, today=today),
-        "notes": "",
+        "notes": oneliner,
     }
 
 

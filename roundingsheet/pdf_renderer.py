@@ -249,7 +249,7 @@ def draw_coag_cell(c, x, y_top, w, h, labs, font_scale=1.0):
 def draw_header(c, y, col_x, font_scale=1.0):
     headers = [
         "Room",
-        "Patient / One-liner",
+        "Name",
         "Vitals / I&O",
         "CBC",
         "BMP",
@@ -279,7 +279,7 @@ def render_rounding_sheet(patient_records, output_pdf: Path, patients_per_page=8
     usable_w = page_w - 2 * margin
     fixed_w = [
         0.55 * inch,
-        2.40 * inch,
+        0.78 * inch,
         1.28 * inch,
         0.78 * inch,
         1.10 * inch,
@@ -326,10 +326,9 @@ def render_rounding_sheet(patient_records, output_pdf: Path, patients_per_page=8
 
         draw_room_text(c, patient.room, col_x[0] + 2, y - cell_top_padding, col_w[0] - 4, font_scale=font_scale)
 
-        patient_text = f"{patient.patient_name}\n{patient.oneliner}".strip()
         draw_wrapped_text(
             c,
-            patient_text,
+            patient.patient_name,
             col_x[1] + 2,
             y - cell_top_padding,
             col_w[1] - 4,
