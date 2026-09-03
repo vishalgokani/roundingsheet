@@ -30,7 +30,7 @@ Activate the environment, then pass the folder containing progress-note `.txt` f
 ```powershell
 cd C:\GitHub\roundingsheet
 conda activate roundingsheet
-python .\roundingsheet\make_rounding_sheet_from_text.py C:\GitHub\roundingsheet\sample_notes
+python .\roundingsheet\make_rounding_sheet_from_text.py C:\notes
 ```
 
 By default, the PDF is written into the same folder as the input notes:
