@@ -85,7 +85,7 @@ The script keeps the most recent value for each lab from the note date when same
 
 ## Method 2: Hospital EMR Integration
 
-A true Epic, Cerner, or other EMR integration should not require clinicians to copy progress notes manually. The intended hospital workflow is an IT-approved EMR button, print option, SlicerDicer-derived export, reporting extract, or embedded internal app that gathers structured tabular data and sends it to the shared PDF renderer in [roundingsheet/pdf_renderer.py](roundingsheet/pdf_renderer.py).
+EMR integration will streamline the use of roundingsheet. The intended hospital workflow is an IT-approved EMR button, print option, or embedded internal app that gathers structured tabular data and sends it to the shared PDF renderer in [roundingsheet/pdf_renderer.py](roundingsheet/pdf_renderer.py).
 
 This repository does not include Epic/Cerner credentials, login automation, or private API calls. Hospital IT should choose the local integration path and map approved EMR data into the renderer's normalized patient-record structure for room, patient summary, vitals, I/O, labs, and notes.
 
